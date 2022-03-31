@@ -1,0 +1,91 @@
+h1 {
+    color: rgb(247, 247, 247);
+    margin-left: 60px;
+}
+
+/** {
+    border: solid;
+}*/
+
+.header {
+    /*Agregamos un fondo simple*/
+    background-color: rgb(53, 229, 220);
+    /*Decirle al navegador usaremos flexbox*/
+    display: flex;
+    /*En div padre, para alinear los recuadros internos
+       horizontalmente*/
+    justify-content: space-between;
+}
+
+.grid {
+    display: flex;
+    flex-wrap:initial;
+    justify-content:center;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+h2{
+    text-align: center;
+    color: rgb(222, 164, 227);
+   
+}
+
+p {
+    text-align: center;
+    color: rgb(255, 255, 255); 
+}
+body {
+    /*hexadesimal rojo*/
+    background-color: #000000;
+    border:10em;
+    margin: 10ch;
+    padding: 0fr;
+    text-align: center;
+}
+/*'a:link' nos permite personalizar el estilo de los
+enlaces.*/
+a:link {
+    color: white;
+}
+/* 'a:visited' nos permite personalizar el estilo de los
+enlaces visitados*/
+a:visited {
+    color: rgb(250, 250, 250);
+}
+
+.Menu {
+    margin-right: 60px;
+    margin-top: 25px;
+}
+
+.Menu a{
+    margin-right: 20px;
+}
+
+.item {
+    position: relative;
+}
+
+.item p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
+
+.item:hover p {
+    opacity: 1;
+}
+
+.item:hover img {
+    opacity: 0.33;
+}
+
+
+
